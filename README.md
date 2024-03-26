@@ -1,2 +1,2 @@
 # bioinformatics
-Nsu course for bioinformatics 1
+NSU course for bioinformatics
