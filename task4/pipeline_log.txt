@@ -1,0 +1,22 @@
+2024-11-03 19:39:09 | httpx | INFO | HTTP Request: GET http://127.0.0.1:4200/api/admin/version "HTTP/1.1 200 OK"
+2024-11-03 19:39:09 | httpx | INFO | HTTP Request: GET http://127.0.0.1:4200/api/csrf-token?client=2476107e-fa2a-47eb-a7ba-efcec4d227d8 "HTTP/1.1 422 Unprocessable Entity"
+2024-11-03 19:39:09 | httpx | INFO | HTTP Request: POST http://127.0.0.1:4200/api/flows/ "HTTP/1.1 200 OK"
+2024-11-03 19:39:09 | httpx | INFO | HTTP Request: POST http://127.0.0.1:4200/api/flow_runs/ "HTTP/1.1 201 Created"
+2024-11-03 19:39:09 | prefect.engine | INFO | Created flow run 'arcane-starling' for flow 'Mapping Quality Assessment'
+2024-11-03 19:39:09 | prefect.engine | INFO | View at http://127.0.0.1:4200/runs/flow-run/f6d66e79-8bf4-4045-8db8-9cb5b650592b
+2024-11-03 19:39:09 | httpx | INFO | HTTP Request: POST http://127.0.0.1:4200/api/flow_runs/f6d66e79-8bf4-4045-8db8-9cb5b650592b/set_state "HTTP/1.1 201 Created"
+2024-11-03 19:39:09 | httpx | INFO | HTTP Request: GET http://127.0.0.1:4200/api/flow_runs/f6d66e79-8bf4-4045-8db8-9cb5b650592b "HTTP/1.1 200 OK"
+2024-11-03 19:39:09 | prefect.flow_runs | INFO | Запуск пайплайна оценки качества картирования
+2024-11-03 19:39:09 | prefect.task_runs | INFO | Запуск samtools flagstat через WSL...
+2024-11-03 19:39:09 | httpx | INFO | HTTP Request: GET http://127.0.0.1:4200/api/flows/79192115-daf4-440a-9b99-9aa6f2c294fe "HTTP/1.1 200 OK"
+2024-11-03 19:39:11 | httpx | INFO | HTTP Request: GET http://127.0.0.1:4200/api/csrf-token?client=f80ebfa8-8fc9-423c-b786-d6477bdf97e5 "HTTP/1.1 422 Unprocessable Entity"
+2024-11-03 19:39:11 | httpx | INFO | HTTP Request: POST http://127.0.0.1:4200/api/logs/ "HTTP/1.1 201 Created"
+2024-11-03 19:39:12 | prefect.task_runs | INFO | Файл flagstat_output_pipeline.txt создан.
+2024-11-03 19:39:12 | prefect.task_runs | INFO | Finished in state Completed()
+2024-11-03 19:39:12 | prefect.task_runs | INFO | Анализируем файл flagstat_output_pipeline.txt...
+2024-11-03 19:39:12 | prefect.task_runs | INFO | Процент картированных ридов: 87.69%
+2024-11-03 19:39:12 | prefect.task_runs | INFO | Finished in state Completed()
+2024-11-03 19:39:12 | prefect.flow_runs | INFO | Результат оценки качества картирования: GOOD 87.68844221105527
+2024-11-03 19:39:12 | httpx | INFO | HTTP Request: POST http://127.0.0.1:4200/api/flow_runs/f6d66e79-8bf4-4045-8db8-9cb5b650592b/set_state "HTTP/1.1 201 Created"
+2024-11-03 19:39:12 | prefect.flow_runs | INFO | Finished in state Completed()
+2024-11-03 19:39:12 | httpx | INFO | HTTP Request: POST http://127.0.0.1:4200/api/logs/ "HTTP/1.1 201 Created"
